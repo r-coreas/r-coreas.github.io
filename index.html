@@ -137,6 +137,31 @@
 			text-align: left;
 		}
 	}
+
+	/* New styles for circular images */
+        .timeline-image {
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            border: 5px solid #25f5e7;
+            overflow: hidden;
+        }
+        
+        .timeline-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        /* Adjust timeline layout */
+        .timeline > li {
+            margin-bottom: 50px;
+        }
+        
+        .timeline-panel {
+            padding: 0 20px;
+        }
 	</style>
     <div class="container">
         <div class="row">
@@ -149,12 +174,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="timeline">
-                  
-                  
                     <li>
-                  
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="/assets/biomarker_nano-omics.png" alt="">
+                             <img src="/assets/biomarker_nano-omics.png" alt="Nano-Omics">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading" style=color:#C4D5F5>
@@ -171,7 +193,7 @@
                     <li class="timeline-inverted">
                   
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="/assets/nano-sensor.png" alt="image description">
+                            <img src="/assets/nano-sensor.png" alt="Corona-Mediated Nano-Sensors">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading" style=color:#C4D5F5>
@@ -188,7 +210,7 @@
                     <li>
                   
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="/assets/img/research_interests/web3.gif" alt="image description">
+                            <img src="/assets/nano-delivery.png" alt="Nanomaterial-Mediated Gene Delivery">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading" style=color:#C4D5F5>
@@ -200,7 +222,6 @@
                             </div>
                         </div>
                     </li>
-                  
                         </div>
                     </li>
                 </ul>
